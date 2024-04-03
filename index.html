@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="main" >
+    <div id="degreeButtons" class="center">
+        <button id="c" class="activatedButton">&degC</button>
+        <button id="f" class="deactivatedButton">&degF</button>
+    </div>
+    <div id="locationSearch">
+    <form>
+        <label for="location">Enter your location: </label>
+        <input id="location" type="text">
+        <button id="locationBtn">Enter</button>
+    </form>
+    </div>
+    <br><br>
+    <div id="locationDiv" class="center">
+        <div>
+    <label for="city">City: </label>
+    <input type="text" id="city" readonly><br><br>
+
+    <label for="country">Country: </label>
+    <input id="country" type="text" readonly></div></div><br><br>
+    <div id="weatherCondition" class="center">
+    <label for="condition">Condition: </label>
+    <input type="text" id="condition" readonly><br><br>
+    </div>
+    <div id="weatherStat" class="center">
+        <div>
+    <label for="temperature">Temperature: </label>
+    <input type="text" id="temperature" readonly><br><br>
+    
+    <label for="feelslike">Feels like: </label>
+    <input type="text" id="feelslike" readonly></div><br><br>
+    <div>
+    <label for="wind">Wind(km/h): </label>
+    <input id="wind" type="text" readonly><br><br>
+
+    <label for="precip">Precipitation(mm): </label>
+    <input type="text" id="precip" readonly></div></div>
+
+    <div id="gif">
+        
+    </div>
+</div>
+<div id="loading" class="invisible">
+ <div>Loading...</div>
+</div>
+</body>
+</html>
